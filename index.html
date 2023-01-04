@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <title>Finsweet</title>
 </head>
 <body class="wrapper">
@@ -34,10 +36,10 @@
                     <h1 class="header__title">Get your vehicle service done online at one place</h1>
                     <div class="header__btn-box">
                         <button class="header__button button">Book a service</button>
-                        <img src="assets/img/1 header/Play icon.svg" alt="Play_icon" class="header__play"><span>Play Video</span>
+                        <a class="header__play-link" href="https://www.youtube.com/watch?v=IxjMkthgDcc" data-fancybox><img src="assets/img/1 header/Play icon.svg" alt="Play_icon" class="header__play"><span class="header__play-text">Play Video</span></a>
                     </div>
                     <div class="header__work-time">
-                        <img src="assets/img/1 header/Icon.svg" alt="Time_icon">
+                        <img src="assets/img/1 header/Icon.svg" alt="Time_icon" class="header__time-icon">
                         <div>
                             <span class="header__text-gray">We are open</span>
                             <span class="header__text">Monday to Friday 9:00 AM to  10:00  AM</span>
@@ -45,7 +47,8 @@
                     </div>
             </section>
             <div class="header__aside">
-                <img src="assets/img/1 header/Image.jpg" alt="Header_image" height="632">
+                <div class="header__service"><div class="header__service-hour"></div>Quick service</div>
+                <div class="header__rating"><div class="header__rating-box"><span class="header__rating-number">4.5/5</span><span class="header__rating-text">Rating</span></div><div class="rateYo" data-rateyo-read-only="true" data-rateyo-rating="4.5" data-rateyo-spacing="2px" starSvg="assets/img/1 header/star.svg"></div></div>
             </div>
         </div>
             </div>
@@ -62,5 +65,8 @@
     </main>
     <footer class="footer"></footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script src="js/main.js"></script>
 </html>
