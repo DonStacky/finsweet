@@ -14,12 +14,14 @@ $(function () {
       });
     $(".rateYo").rateYo("option", "ratedFill", "#FFB648");
 
+    var mixer = mixitup('.blog__grid', {
+      animation: {
+        enable: false
+    }
+  });
 
-
-
-
-
-
-
-
+    $('.blog__title').on('click', function() {
+      $('.blog__title').removeClass('blog__title--active')
+      $(this).addClass('blog__title--active')
+    })
   });
