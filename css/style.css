@@ -573,6 +573,32 @@
     display: none;
 }
 
+/*===================================================== CTA =====================================================*/
+/*===================================================== CTA =====================================================*/
+.cta__block {
+    box-sizing: border-box;
+    width: 729px;
+    margin-left: 318px;
+    background: #FF6433;
+    padding: 128px 61px;
+}
+.cta__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url("../assets/img/4CTA/Image.jpg") 0% 0% / contain no-repeat, url("../assets/img/4CTA/ovGrEUgrkyE.jpg") 100% 100% /contain no-repeat;
+}
+.cta__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    margin: 0px 19px 48px;
+}
+.cta__button{
+    background: #1E1B1B;
+    color: #fff;
+}
 /*===================================================== Feedback =====================================================*/
 /*===================================================== Feedback =====================================================*/
 
