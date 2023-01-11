@@ -42,5 +42,27 @@ $(function () {
       e.preventDefault()
       $('.feedack__slider').slick('slickNext')
       })
-
+      /*
+      $('.faq__item').on('click', function(e) {
+        e.preventDefault()
+        if ($(this).hasClass('faq__item--active')) {
+            $(this).removeClass('faq__item--active')
+            $(this).children('.faq__itemText').slideUp()
+        } else {
+            $('.faq__item').removeClass('faq__item--active')
+            $('.faq__itemText').slideUp()
+            $(this).addClass('faq__item--active')
+            $(this).children('.faq__itemText').slideDown()
+        }
+    })*/
+    $('.faq__item').on('click', function(e) {
+      e.preventDefault()
+      if ($(this).hasClass('faq__item--active')) {
+        $(this).removeClass('faq__item--active')
+        $(this).children('.faq__itemText').slideUp()
+      } else {
+      $(this).addClass('faq__item--active')
+      $(this).children('.faq__itemText').slideDown()
+      }
+    })
   });
