@@ -639,7 +639,30 @@
             </div>
         </div>
         </section>
-        <section class="form"></section>
+        <section class="form">
+            <div class="container">
+                <h2 class="form__header title">Get in touch with our experts</h2>
+                <div class="form__inner">
+                    <div class="form__left">
+                        <form action="q.php" name="customer" class="form__form">
+                            <input type="text" class="form__input" placeholder="Your full Name">
+                            <input type="text" class="form__input" placeholder="Your Email">
+                            <input type="text" class="form__input" placeholder="Select service type">
+                            <input type="text" class="form__input" placeholder="Message">
+                            <button class="form__button button" type="submit">Send message</button>
+                        </form>
+                    </div>
+                    <div class="form__right">
+                        <h4 class="form__contact">Address</h4> NH 234   Public Square San Francisco  65368
+                        <h4 class="form__contact">Contact  Details</h4> 1800 265 24 52 <br>
+                        Finsweet@gmail.com
+                        <h4 class="form__contact">Opening Hours</h4> Monday to Friday 9:00 AM to  10:00  AM
+                    </div>
+                </div>
+                <div class="form__map" id="map"></div>
+            </div>
+            <div class="form__background"></div>
+        </section>
     </main>
     <footer class="footer"></footer>
 </body>
@@ -648,6 +671,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/mixitup.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
 <script src="js/main.js"></script>
 
 </html>
