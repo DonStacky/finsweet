@@ -2,6 +2,9 @@ section {
     max-width: 1920px;
     margin: 0 auto;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .wrapper {
     min-height: 100%;
@@ -988,4 +991,106 @@ li.slick-active {
     /* Firefox */
     font-size: 16px;
     color: #1E1B1B;
+}
+/*===================================================== FOOTER =====================================================*/
+/*===================================================== FOOTER =====================================================*/
+.footer {
+    font-family: manrope, sans-serif;
+}
+.footer__top {
+    background: rgba(30, 27, 27, 0.98);
+}
+.footer__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 128px 0px;
+}
+.footer__home:hover path {
+    fill: #FF6433;
+    transition: 0.3s;
+}
+.footer__socials {
+    max-width: 460px;
+    width: 100%;
+}
+.footer__title {
+    font-weight: 700;
+font-size: 48px;
+line-height: 140%;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+margin-bottom: 64px;
+}
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    width: 167px;
+}
+.footer__item path {
+    transition: 0.3s;
+}
+.footer__item:hover path {
+    fill: #FF6433;
+}
+.footer__contacts {
+    max-width: 624px;
+    width: 100%;
+}
+.footer__contacts-item h4 {
+    font-weight: 600;
+font-size: 18px;
+line-height: 175%;
+color: #FFFFFF;
+opacity: 0.6;
+margin-bottom: 8px;
+}
+.footer__contacts-item {
+    font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+}
+.footer__contacts-item:not(:last-of-type) {
+    margin-bottom: 32px;
+}
+.footer__contacts-item:hover a {
+    color: #FF6433;
+    transition: 0.3s;
+}
+
+.footer__bottom {
+    background: #1E1B1B;
+}
+.footer__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 65px 0px;
+}
+.footer__bottom-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer__bottom-item {
+    font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #FFFFFF;
+}
+.footer__copy {
+    font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #939191;
+}
+.footer__bottom-inner nav {
+    max-width: 460px;
+    width: 100%;
+}
+.footer__bottom-item:hover {
+    color: #FF6433;
+    transition: 0.3s;
 }
