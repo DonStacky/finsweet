@@ -65,6 +65,28 @@ $(function () {
       $(this).children('.faq__itemText').slideDown()
       }
     })
+
+    $('.burger, .overlay').on('click', function(e) {
+      e.preventDefault()
+      $('.header__nav').toggleClass('header__nav--open')
+      $('.burger').toggleClass('burger--exit')
+      $('.overlay').toggleClass('overlay--show')
+      })
+
+      $('.header__list').on('click', function() {
+        $('.header__nav').removeClass('header__nav--open')
+        $('.burger').removeClass('burger--exit')
+        $('.overlay').removeClass('overlay--show')
+        })
+
+      setInterval(() => {
+        if ($(window).scrollTop() > 50 && $('.header__nav').hasClass('header__nav--open') === false) {
+            $('.burger').addClass('burger--follow')
+        } else {
+            $('.burger').removeClass('burger--follow')
+        }
+    }, 0);
+
   });
 
   function init() {
