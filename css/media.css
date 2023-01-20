@@ -1,86 +1,368 @@
+/*==================================================== 1360 ====================================================*/
+/*==================================================== 1360 ====================================================*/
+@media (max-width: 1360px) {
+.brands__grid {
+    max-width: 1290px;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    justify-content: space-evenly;
+}
+}
+
+/*==================================================== 1050 ====================================================*/
+/*==================================================== 1050 ====================================================*/
 @media (max-width: 1050px) {
+
+    /*==================================================== Header ====================================================*/
     .header__title {
         font-size: 40px;
         line-height: 60px;
     }
+
+    /*==================================================== Offer ====================================================*/
+    .offer__grid {
+        grid-template-rows: repeat(2, 160px);
+    }
+
+    .offer__grid-text {
+        margin-bottom: 28px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    /*==================================================== CTA ====================================================*/
+    .cta__block {
+        margin-left: 0px;
+        height: auto;
+    }
+
+    .cta__container {
+        background: url(../assets/img/4CTA/ovGrEUgrkyE.jpg) 100% 100% /cover no-repeat;
+    }
+    .brands__grid svg {
+        max-width: 180px;
+    }
 }
 
+/*==================================================== 900 ====================================================*/
+/*==================================================== 900 ====================================================*/
 @media (max-width: 900px) {
     .header__flexbox {
         margin: 0;
     }
+
     .header {
         padding: 0;
     }
+
     .burger {
         display: flex;
     }
+
     .header__nav {
-    display: flex;
-    padding: 23px;
-    position: fixed;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 400px;
-    width: 100%;
-    right: 0;
-    height: 100vh;
-    background: #fff;
-    z-index: 20;
-    gap: 100px;
-    transform: translateY(-100%);
-    transition: 0.5s;
-}
-.header__nav .header__list {
-    flex-direction: column;
-    align-self: center;
-    margin: 0;
-}
-.header__nav .header__item {
-    padding: 10px;
-    margin: 0;
-    cursor: pointer;
-}
-.header__nav .header__contact::before {
-    display: none;
-}
-.header__nav--open {
-    transform: translateY(0%);
-}
+        display: flex;
+        padding: 23px;
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 400px;
+        width: 100%;
+        right: 0;
+        height: 100vh;
+        background: #fff;
+        z-index: 20;
+        gap: 100px;
+        transform: translateY(-100%);
+        transition: 0.5s;
+    }
+
+    .header__nav .header__list {
+        flex-direction: column;
+        align-self: center;
+        margin: 0;
+    }
+
+    .header__nav .header__item {
+        padding: 10px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .header__nav .header__contact::before {
+        display: none;
+    }
+
+    .header__nav--open {
+        transform: translateY(0%);
+    }
+    .brands__grid svg {
+        max-width: 120px;
+        height: 80px;
+    }
+    .brands__inner {
+        padding: 50px 0px;
+    }
+    .brands__grid {
+        grid-template-rows: 20px;
+    }
 }
 
-@media (max-width: 780px) {
+/*==================================================== 800 ====================================================*/
+/*==================================================== 800 ====================================================*/
+@media (max-width: 800px) {
+
+    /*==================================================== Header ====================================================*/
     .header__flexbox {
         flex-direction: column-reverse;
         padding: 80px 0px;
     }
+
     .header__aside {
         object-fit: contain;
         height: 400px;
     }
+
     .header__service {
         margin-top: -50px;
     }
+
     .header__rating {
         margin-bottom: -50px;
     }
+
     .header__title {
         margin-top: 40px;
     }
+
+    .header__nav {
+        box-sizing: border-box;
+    }
+
+    /*==================================================== offer ====================================================*/
+    .offer__grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 160px);
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    /*==================================================== Process ====================================================*/
+    .titleh3 {
+        font-size: 24px;
+    }
+
+    .process__text {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .process__inner {
+        padding: 80px 0px 60px;
+    }
+
+    .process__rightText::after {
+        height: 40px;
+        bottom: -10px;
+    }
+
+    .process__right {
+        max-width: 425px;
+        box-sizing: border-box;
+        padding-left: 100px;
+    }
+
+    /*==================================================== CTA ====================================================*/
+    .cta__title {
+        font-size: 40px;
+    }
+
+    .stat__number {
+        font-size: 44px;
+    }
+
+    .stat__item {
+        font-size: 18px;
+    }
+
+    .cta__block {
+        padding: 80px 61px;
+    }
 }
+
+/*==================================================== 630 ====================================================*/
+/*==================================================== 630 ====================================================*/
+@media (max-width: 630px) {
+    .offer {
+        padding-top: 80px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .offer__grid-text {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .offer__grid {
+        grid-template-rows: repeat(3, 130px);
+    }
+
+    .offer__grid-item svg {
+        height: 36px;
+        width: 36px;
+    }
+
+    .offer__more span {
+        font-size: 14px;
+    }
+
+    .offer__rectangle {
+        display: none;
+    }
+
+    .title br {
+        display: none;
+    }
+
+    /*==================================================== Process ====================================================*/
+    .process__inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .process__left {
+        margin: 0px;
+    }
+
+    .process__left {
+        max-width: 524px;
+    }
+
+    /*==================================================== CTA ====================================================*/
+    .cta__title {
+        font-size: 32px;
+    }
+    .stat__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .stat__item {
+        width: 34%;
+    }
+    .cta__block {
+        padding: 40px 20px;
+    }
+    .brands__grid {
+        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+        grid-row-gap: 20px;
+    }
+    .brands__grid svg {
+        max-width: 100px;
+        height: 60px;
+    }
+}
+
+/*==================================================== 430 ====================================================*/
+/*==================================================== 430 ====================================================*/
 @media (max-width: 430px) {
+
+    /*==================================================== Header ====================================================*/
     .header__title {
         margin-top: 20px;
         font-size: 30px;
         line-height: 150%;
     }
-    .header__service {
-        display: none;
-    }
-    .header__rating {
-        display: none;
-    }
+
     .header__aside {
-        height: 200px;
+        display: none;
     }
+
+    .header__btn-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__button {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .header__play {
+        padding-left: 0px;
+    }
+
+    .header__flexbox {
+        padding: 40px 0px;
+    }
+
+    /*==================================================== Offer ====================================================*/
+    .offer {
+        padding-top: 40px;
+    }
+
+    .offer__header {
+        margin-bottom: 25px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .offer__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 130px);
+    }
+
+    /*==================================================== Process ====================================================*/
+    .process__rightText::after {
+        display: none;
+    }
+
+    /*==================================================== CTA ====================================================*/
+    .cta__title {
+        font-size: 32px;
+    }
+        /*==================================================== CTA ====================================================*/
+        .cta__title {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .stat__item {
+            width: 34%;
+        }
+        .cta__block {
+            padding: 30px 10px;
+            font-size: 16px;
+        }
+        .stat__number {
+            font-size: 32px;
+        }
+        .stat__inner {
+            padding: 20px 0px;
+        }
+        .cta__block a {
+            display: block;
+            width: 180px;
+            margin: 0 auto;
+        }
+        .brands__grid {
+            grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+            grid-row-gap: 10px;
+        }
+        .brands__grid svg {
+            max-width: 80px;
+            height: 40px;
+        }
 }

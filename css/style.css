@@ -37,7 +37,7 @@ html {
 .title {
     font-weight: 800;
     font-size: 58px;
-    line-height: 76px;
+    line-height: 130%;
     letter-spacing: -0.03em;
 }
 
@@ -332,7 +332,7 @@ html {
 
 .offer__grid {
     display: grid;
-    grid-template-columns: repeat(4, 316px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 232px);
     grid-gap: 8px 8px;
 }
@@ -469,53 +469,53 @@ html {
 
 .process__inner {
     display: flex;
-    justify-content: space-between;
     padding: 134px 0px;
+    gap: 10px;
 }
 
 .process__left {
     margin-right: 100px;
-    width: 524px;
-    min-width: 524px;
+    max-width: 655px;
+    width: 100%;
 }
 
 .process__header {
+    max-width: 524px;
     margin-bottom: 16px;
+    min-width: 190px;
 }
-
-.title {}
 
 .process__text {
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
     color: rgba(30, 27, 27, 0.6);
+    max-width: 524px;
 }
 
 .process__button {
     margin-top: 32px;
 }
 
-.button {}
-
 .process__right {
-    width: 325px;
-    min-width: 325px;
-    margin-right: 200px;
+    max-width: 325px;
+    width: 100%;
 }
 
 .process__title {
     position: relative;
     margin-bottom: 8px;
+    line-height: 150%;
 }
-
-.titleh3 {}
 
 .process__rightText {
     margin-bottom: 29px;
     font-size: 18px;
     line-height: 175%;
     position: relative;
+}
+.process__rightText:last-of-type {
+    margin-bottom: 0px;
 }
 
 .process__title--01:before {
@@ -591,7 +591,8 @@ html {
 /*===================================================== CTA =====================================================*/
 .cta__block {
     box-sizing: border-box;
-    width: 729px;
+    max-width: 729px;
+    width: 100%;
     margin-left: 318px;
     background: #FF6433;
     padding: 128px 61px;
@@ -632,7 +633,7 @@ html {
 .stat__item {
     font-weight: 600;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 150%;
     letter-spacing: -0.03em;
     color: #1E1B1B;
     opacity: 0.7;
